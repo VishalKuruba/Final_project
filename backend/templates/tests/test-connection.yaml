@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "backend-test-connection"  # Static name for the pod
+  labels:
+    app: "backend"                # Static labels for the pod
+    chart: "backend-1.0"
+    release: "backend"
+    heritage: "Helm"
+  annotations:
+    "helm.sh/hook": test           # This is a Helm test hook to run after the install
+spec:
+  containers:
+    - name: wget
+      image: busybox
+      command: ['wget']
+      args: ['backend-test-connection:{{ .Values.service.port }}']  # Replaced with a static name
+  restartPolicy: Never

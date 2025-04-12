@@ -1,0 +1,5 @@
+echo '.helm/' > .gitignore
+echo 'releases/' >> .gitignore
+echo '*.log' >> .gitignore
+echo '*.bak' >> .gitignore
+echo '*.swp' >> .gitignore

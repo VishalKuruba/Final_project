@@ -1,0 +1,10 @@
+replicaCount: 1
+
+image:
+  repository: 7411191314/classifier-frontend
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 3000

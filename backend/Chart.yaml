@@ -1,0 +1,4 @@
+apiVersion: v2
+name: backend
+description: Flask backend for classifier web app
+version: 0.1.0

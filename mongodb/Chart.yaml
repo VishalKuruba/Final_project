@@ -1,0 +1,4 @@
+apiVersion: v2
+name: mongo
+description: MongoDB for classifier web app
+version: 0.1.0

@@ -1,0 +1,13 @@
+replicaCount: 1
+
+image:
+  repository: 7411191314/classifier-backend
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 5000
+
+env:
+  MONGO_URI: "mongodb://mongo:27017/logs"
