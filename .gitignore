@@ -3,3 +3,15 @@ echo 'releases/' >> .gitignore
 echo '*.log' >> .gitignore
 echo '*.bak' >> .gitignore
 echo '*.swp' >> .gitignore
+# Ignore everything
+/*
+
+# Except frontend, backend, and mongodb directories
+!/frontend/
+!/backend/
+!/mongodb/
+
+# Ignore Helm charts specific files/folders
+helm-v3.9.4-linux-amd64.tar.gz
+linux-amd64/
+ 
